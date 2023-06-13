@@ -1,0 +1,15 @@
+.container1{
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.con{
+    border-width: 2px;
+    background-color:burlywood;
+
+}
+input{
+    text-emphasis-color: black;
+}

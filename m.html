@@ -1,0 +1,86 @@
+create_json.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .card
+        {
+            width:fit-content;
+            height:fit-content;
+            margin:10px;
+            padding:10px;
+            background-color: bisque;
+            display: inline-block;
+        }
+        .title
+        {
+            font-size:24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .collection
+        {
+            color:gold;
+            background-color: black;
+            padding:5px;
+            font-size:22px;
+        }
+    </style>
+</head>
+<body>    
+    <input type="text" id="name" placeholder="Movie Name">
+    <input type="number" id="year" placeholder="Release Year">
+    <input type="text" id="collection" placeholder="Box Office Collection">
+    <button onclick="addMovie()">Add</button>
+
+    <div id="demo">
+    </div>
+
+    <script>
+        imdb=[
+            {name:'Avengers',year:2013,collection:"100 mil"},
+            {name:'Hulk',year:2008,collection:"80 mil"},
+            {name:'Thor',year:2010,collection:"90 mil"},
+            {name:'Black Panther',year:2016,collection:"70 mil"},
+            {name:'Spiderman',year:2006,collection:"110 mil"},
+        ]
+        function render()
+        {
+            html="";
+            for(i=0;i<imdb.length;i++)
+            {
+                html+=`<div class='card'>
+                        <div class='title'>${imdb[i].name}</div>
+                        <div class='year'>${imdb[i].year}</div>
+                        <div class='collection'>${imdb[i].collection}</div>
+
+                        <div>
+                            <button onclick='deleteMovie(${i})'>Delete</button>
+                        </div>
+                </div>`;          
+            }        
+            demoObj=document.getElementById("demo");
+            demoObj.innerHTML=html;
+        }
+        
+        render();
+        function deleteMovie(i)
+        {
+            imdb.splice(i,1);
+            render();
+        }
+        function addMovie()
+        {
+            nameObj=document.getElementById("name");
+            yearObj=document.getElementById("year");
+            collectionObj=document.getElementById("collection");
+
+            movieObj={name:nameObj.value,year:yearObj.value,collection:collectionObj.value};
+            imdb.push(movieObj);
+            render();
+            console.log("IMDB Data=",imdb);           
+        }
+    </script>
+
+</body>
+</html>
