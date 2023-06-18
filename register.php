@@ -15,9 +15,9 @@
     $register_as =$_POST['register_as'];
     
 
-    $sql="INSERT INTO`ecommerce1`( `user name`, `emai`, `mobile`, `password`, `register as`, `date`) VALUES( '$username', '$email', '$mobile', '$password', '$register_as', current_timestamp()); 
-    ";
-    echo "$sql";
+    $sql="INSERT INTO ecommerce1( 'username', 'email', 'mobile', 'password', 'register_as') VALUES( '$username', '$email', '$mobile', '$password', '$register_as') ";
+
+    $result=mysqli_query($con,$sql);
 
 
 ?>

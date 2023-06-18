@@ -26,7 +26,7 @@ align-items: center;
     border-radius: 20px;
 }
 
-#btn{
+.btn{
     background: rgb(244, 246, 247);
     color: black;
     font-weight: 600;
