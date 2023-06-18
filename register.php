@@ -19,8 +19,9 @@
 
     $result=mysqli_query($con,$sql);
 if($result){
-header("location:login.html")
-}else{
+header("location:login.html");
+}
+else{
 echo "registration failed";
 echo mysqli_error($con) ;
 }
