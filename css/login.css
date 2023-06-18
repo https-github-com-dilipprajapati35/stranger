@@ -1,12 +1,12 @@
 body{
-    background-image: url(bg3.jpg);
+    background-image: url(../image/bg3.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;}
-    .input{ 
-        width: 100%;
-        background:rgb(193, 201, 203);
-        padding: 10px;
+    .input {
+        width: 99%;
+        background: rgb(193, 201, 203);
+        padding: 5px;
     }
         .con{
             height: 100vh;
@@ -60,7 +60,7 @@ body{
         .con5{
             position: absolute;
             height: 52px;
-            top: 190px;
+            top: 197px;
             position: absolute;
             font-style: normal;
             font-weight: 200; 
