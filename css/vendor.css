@@ -57,25 +57,26 @@ mix-blend-mode: multiply;
     border-radius: 10px;
     color: black;
     padding: 8px;   
-
 }
 a{
+    color: black;
+}
+.login_name{
     color: black;
 }
 nav {
     
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding: 0px;
-    gap: 107px;
-        position: absolute;
+    gap: 137px;
+    position: absolute;
     width: 534.75px;
     height: 14px;
     left: 401.48px;
     top: 32.33px;
-    
 }
 .name1{display: flex;
     flex-direction: row;
@@ -110,30 +111,30 @@ nav {
     top: 352px;
     border-radius: 11px;
     background: #F7B538;}
-.btn2{
-    position: absolute;
-    width: 87px;
-    height: 31px;
-    border-radius: 11px;
-    left: 257px;
-    top: 387px;
-    background: #F7B538;
-}
-
-.a{
-color: black;
-}
-.img1{
-    width: 356px;
-    height: 301px;
-    padding: 29px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-   
-
-}
-.img2{    width: 356px;
+    
+    .a{
+        color: black;
+    }
+    .img1{
+        width: 356px;
+        height: 301px;
+        padding: 29px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        
+        
+    }
+    .btn2{
+        position: absolute;
+        width: 87px;
+        height: 31px;
+        border-radius: 11px;
+        left: 257px;
+        top: 387px;
+        background: #F7B538;
+    }
+/* .img2{    width: 356px;
     height: 301px;
     padding: 29px;
     flex: none;
@@ -240,5 +241,13 @@ color: black;
     border-radius: 11px;
     
     background: #F7B538;
+} */
+.add_btn{
+    position: relative;
+    z-index: 1;
+    background: #0C56DA;
+    left: 1260px;
+    top: 106px;
+    color: white;
+    border-radius: 10px;
 }
-
