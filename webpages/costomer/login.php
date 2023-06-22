@@ -1,15 +1,21 @@
 <?php
-if(!isset($_post['uemail']) || !isset($_post['upassword']));
+
+session_start();
+
+$_SESSION['login_status']=false;
+
+if(!isset($_post['uname']) || !isset($_post['upass']));
 {
     echo "bad request";
     die;
 }
-$uemail=$_post['uemail'];
-$password=$_post['upassword'];
-if($email=='acme' && $password=='intern')
+$uname=$_post['uname'];
+$upass=$_post['upass'];
+if($uname=='acme' && $upass=='intern')
 {
   echo "<h2> welcome home </h2>";
-  header("location:costomer.html");
+  header("location:home.php");
+  $_SESSION['login_status']=true;
 }
 else{
     echo "<h2> Invalid </h2>";

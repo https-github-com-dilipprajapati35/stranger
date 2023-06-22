@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['login_status'])) {
+    echo "login first";
+    die;
+}
+if($_SESSION['login_status']!=true)
+{
+    echo "Credentials are not Authentiacated";
+    die;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
