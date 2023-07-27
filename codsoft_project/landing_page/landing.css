@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(/codsoft_project/img/bg1.png);
+    background-repeat: no-repeat;
+}
+.box{
+    background-color: #9B9191;;
+    width: 1440px;
+    height: 117px;
+    mix-blend-mode: color-dodge;
+}
+h1{
+    color: white;
+    font-family: Jomhuria;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 105px;
+    position: absolute;
+color: white;
+font-family: Poppins;
+font-size: 19px;
+font-style: normal;
+font-weight: bold;
+line-height: 111px;
+left: 307px;
+
+}
+.btn{
+    position: fixed;
+    background-color:#3F4D72 ;
+    border-radius: 39px;
+    color: white;
+    height: 34px;
+    top: 41px;
+    left: 1244px;
+
+
+}
+.logo{
+
+    position: fixed;
+    width: 215px;
+    height: 41px;
+    background-color: black;
+    top: 38px;
+    left: 10px;
+}
+#head1{
+    background-color: black;
+    color: white;
+    
+}
+#head2{
+    background-color: white;
+    color: black;
+    
+}
+.head{
+   display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    padding: 0px;
+    left: 10px;
+}
